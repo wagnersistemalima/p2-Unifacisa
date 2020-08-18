@@ -11,6 +11,8 @@ Descrição | Tipo | Tamanho | Valores | Valor padrão | Intervalo
 7| um caractere Unicode | char| 16 bits| '\u0000' | '\u0000' a '\uFFFF'
 8| valor verdade | boolean| 1 bit| false | {false, true}
 
+String - cadeia de caracteres (palavras ou textos)
+
 Um bit pode armazenar 2 valores possíveis (0 ou 1)
 ## Cada bit = 2 possibilidades
 8 bits:
