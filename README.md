@@ -13,3 +13,8 @@ Descrição | Tipo | Tamanho | Valores | Valor padrão | Intervalo
 6| tipos numéricos com ponto flutuante | double| 64 bits| 0.0 | -4,94E-307 a 1,79E+308
 7| um caractere Unicode | char| 16 bits| '\u0000' | '\u0000' a '\uFFFF'
 8| valor verdade | boolean| 1 bit| false | {false, true}
+
+Um bit pode armazenar 2 valores possíveis (0 ou 1)
+## Cada bit = 2 possibilidades
+8 bits:
+2 x 2 x 2 x 2 x 2 x 2 x 2 x 2 = 28 = 256 possibilidades
