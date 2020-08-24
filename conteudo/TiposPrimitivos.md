@@ -28,9 +28,11 @@ Descrição|Operador|Significado
 4| / | Divisão
 5| % | resto da divisão("mod")
 
-## Precedência: 
-1º lugar: * / %
-2º lugar: + -
+## Precedência 
+Ordem| Operador
+---|---
+1º lugar|  * / %
+2º lugar|  + -
 
 ## Operadores comparativos
 
