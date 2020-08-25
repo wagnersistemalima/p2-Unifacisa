@@ -10,7 +10,8 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		double entrada = sc.nextDouble();
+		double usuario = sc.nextDouble();
+		double entrada = usuario;
 		
 		System.out.println("NOTAS:");
 		
