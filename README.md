@@ -11,4 +11,6 @@ Repositório com conteúdo abordado na disciplina de programação do curso de S
 
 [Exercicios01](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/exercicio01/src/application/Program.java) :1st_place_medal:
 
+[Exercicio02](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/exercicio02/src/application/Program.java) :1st_place_medal:
+
 
