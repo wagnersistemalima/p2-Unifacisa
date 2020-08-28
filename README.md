@@ -16,3 +16,9 @@ Repositório com conteúdo abordado na disciplina de programação do curso de S
 [Exercicio03](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/exercicio03/src/application/Program.java) :1st_place_medal:
 
 [Exercicio04](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/exercicio04/src/application/Program.java) :1st_place_medal:
+
+[Exercicio05](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/exercicio05/src/application/Program.java) :1st_place_medal:
+
+[Exercicio06](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/exercicio06/src/application/Program.java) :1st_place_medal:
+
+[Exercicio07](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/exercicio07/src/application/Program.java) :1st_place_medal:
