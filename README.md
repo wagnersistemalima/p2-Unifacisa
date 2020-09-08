@@ -24,3 +24,5 @@ Repositório com conteúdo abordado na disciplina de programação do curso de S
 [Exercicio07](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/exercicio07/src/application/Program.java) :1st_place_medal:
 
 [Exercicio1Carros](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicio1Carro/src) :red_car: :blue_car:
+
+[Exercicio2ClassificadoImoveis](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicio2Imovel/src) :houses: :hotel:
