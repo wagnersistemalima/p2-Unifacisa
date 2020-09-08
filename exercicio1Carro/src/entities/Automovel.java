@@ -1,6 +1,6 @@
 package entities;
 
-public class Altomovel {
+public class Automovel {
 	
 	private String nome;
 	private String marca;
@@ -12,13 +12,13 @@ public class Altomovel {
 	private boolean direcaoEletrica;
 	private double precoBase;
 	
-	public Altomovel() {
+	public Automovel() {
 		
 	}
 	
 	
 
-	public Altomovel(String nome, String marca, String cor, Integer portas, double precoBase) {
+	public Automovel(String nome, String marca, String cor, Integer portas, double precoBase) {
 		this.nome = nome;
 		this.marca = marca;
 		this.cor = cor;
@@ -26,7 +26,7 @@ public class Altomovel {
 		this.precoBase = precoBase;
 	}
 
-	public Altomovel(String nome, String marca, String cor, Integer portas, boolean vidroEletrico,
+	public Automovel(String nome, String marca, String cor, Integer portas, boolean vidroEletrico,
 			boolean arCondicionado, boolean cambioAutomatico, boolean direcaoEletrica, double precoBase) {
 		this.nome = nome;
 		this.marca = marca;
