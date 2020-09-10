@@ -13,7 +13,6 @@ public class Imovel {
 	private boolean elevador;
 	private boolean piscina;
 	private boolean quadra;
-	private Double precoFinal = 0.0;
 	
 	public Imovel() {
 		
@@ -136,16 +135,8 @@ public class Imovel {
 		this.quadra = quadra;
 	}
 
-	public Double getPrecoFinal() {
-		return precoFinal;
-	}
-
-	public void setPrecoFinal(Double precoFinal) {
-		this.precoFinal = precoFinal;
-	}
-
-	public void calculaPreco() {
-		int opcao = 0;
+	public double calculaPreco() {
+		double opcao = 0;
 		if (elevador) {
 			opcao += 2500;
 		}
@@ -157,7 +148,7 @@ public class Imovel {
 		}
 		
 		if (tipo == "casa") {
-			precoFinal += areaMetrosQuadrados * 5000 + opcao;
+			return opcao += areaMetrosQuadrados * 5000;
 		}
 		if (tipo == "apartamento") {
 			int precoPorAndar = 0;
@@ -166,7 +157,10 @@ public class Imovel {
 					precoPorAndar = cont * 2000;
 					cont++;
 			}
-			precoFinal += areaMetrosQuadrados * 5000 + opcao + precoPorAndar;
+			return opcao += areaMetrosQuadrados * 5000 + precoPorAndar;
+		}
+		else {
+			return 0.0;
 		}
 		
 	}
@@ -184,9 +178,8 @@ public class Imovel {
 			+ numeroDeBanheiros
 			+ " banheiros, "
 			+ areaMetrosQuadrados
-			+ " m2, preço final R$ "
-			+ String.format("%.2f", precoFinal);
-			
+			+ " m2, preço final: R$ "
+			+ String.format("%.2f", calculaPreco());			
 	}
 
 }

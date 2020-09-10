@@ -16,18 +16,23 @@ public class Automovel {
 		
 	}
 	
-	
-
-	public Automovel(String nome, String marca, String cor, Integer portas, double precoBase) {
+	// construtor de um carro basico
+	public Automovel(String nome, String marca, double precoBase) {
 		this.nome = nome;
 		this.marca = marca;
-		this.cor = cor;
-		this.portas = portas;
 		this.precoBase = precoBase;
+		this.cor = "branco";
+		this.portas = 2;
+		this.vidroEletrico = false;
+		this.arCondicionado = false;
+		this.cambioAutomatico = false;
+		this.direcaoEletrica = false;
 	}
 
-	public Automovel(String nome, String marca, String cor, Integer portas, boolean vidroEletrico,
-			boolean arCondicionado, boolean cambioAutomatico, boolean direcaoEletrica, double precoBase) {
+	// construtor de um carro personalizado
+	public Automovel(String nome, String marca, String cor, Integer portas, boolean vidroEletrico, boolean arCondicionado,
+			boolean cambioAutomatico, boolean direcaoEletrica, double precoBase) {
+		super();
 		this.nome = nome;
 		this.marca = marca;
 		this.cor = cor;
@@ -38,10 +43,82 @@ public class Automovel {
 		this.direcaoEletrica = direcaoEletrica;
 		this.precoBase = precoBase;
 	}
-	
-	public void calculaPreco() {
-		
-		double soma = 0.0;
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getMarca() {
+		return marca;
+	}
+
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+
+	public String getCor() {
+		return cor;
+	}
+
+	public void setCor(String cor) {
+		this.cor = cor;
+	}
+
+	public Integer getPortas() {
+		return portas;
+	}
+
+	public void setPortas(Integer portas) {
+		this.portas = portas;
+	}
+
+	public boolean isVidroEletrico() {
+		return vidroEletrico;
+	}
+
+	public void setVidroEletrico(boolean vidroEletrico) {
+		this.vidroEletrico = vidroEletrico;
+	}
+
+	public boolean isArCondicionado() {
+		return arCondicionado;
+	}
+
+	public void setArCondicionado(boolean arCondicionado) {
+		this.arCondicionado = arCondicionado;
+	}
+
+	public boolean isCambioAutomatico() {
+		return cambioAutomatico;
+	}
+
+	public void setCambioAutomatico(boolean cambioAutomatico) {
+		this.cambioAutomatico = cambioAutomatico;
+	}
+
+	public boolean isDirecaoEletrica() {
+		return direcaoEletrica;
+	}
+
+	public void setDirecaoEletrica(boolean direcaoEletrica) {
+		this.direcaoEletrica = direcaoEletrica;
+	}
+
+	public double getPrecoBase() {
+		return precoBase;
+	}
+
+	public void setPrecoBase(double precoBase) {
+		this.precoBase = precoBase;
+	}
+
+	// função para calcular preco do carro
+	public double calculaPreco() {
+		double soma = precoBase;
 		if (vidroEletrico) {
 			soma += 1250.0;
 		}
@@ -55,25 +132,20 @@ public class Automovel {
 			soma += 1250.0;
 		}
 		else {
-			soma = 0.0;
+			soma = precoBase;
 		}
 		
 		switch (cor) {
 		case "branco":
-			precoBase += soma;
-			break;
+			return soma;
 		case "azul":
-			precoBase += soma;
-			break;
+			return soma;
 		case "vermelho":
-			precoBase += soma;
-			break;
+			return soma;
 		case "preto":
-			precoBase += soma;
-			break;
+			return soma;
 		default:
-			precoBase += 1000.0 + soma;
-			break;
+			return soma += 1000.0;
 		}
 		
 		
@@ -89,6 +161,7 @@ public class Automovel {
 			+ " "
 			+ portas
 			+ " portas, "
-			+ String.format("R$ %.2f", precoBase);
+			+ ", "
+			+ String.format("R$ %.2f", calculaPreco());
 	}
 }
