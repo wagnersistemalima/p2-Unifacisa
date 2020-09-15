@@ -1,10 +1,15 @@
 package entities;
 
+import entities.enums.Cor;
+
 public class Automovel {
+	
+//	private static boolean promocao;
+	private boolean promocao;
 	
 	private String nome;
 	private String marca;
-	private String cor;
+	private Cor cor;
 	private Integer portas;
 	private boolean vidroEletrico;
 	private boolean arCondicionado;
@@ -21,7 +26,7 @@ public class Automovel {
 		this.nome = nome;
 		this.marca = marca;
 		this.precoBase = precoBase;
-		this.cor = "branco";
+		this.cor = Cor.BRANCO;
 		this.portas = 2;
 		this.vidroEletrico = false;
 		this.arCondicionado = false;
@@ -30,7 +35,8 @@ public class Automovel {
 	}
 
 	// construtor de um carro personalizado
-	public Automovel(String nome, String marca, String cor, Integer portas, boolean vidroEletrico, boolean arCondicionado,
+	
+	public Automovel(String nome, String marca, Cor cor, Integer portas, boolean vidroEletrico, boolean arCondicionado,
 			boolean cambioAutomatico, boolean direcaoEletrica, double precoBase) {
 		super();
 		this.nome = nome;
@@ -43,10 +49,11 @@ public class Automovel {
 		this.direcaoEletrica = direcaoEletrica;
 		this.precoBase = precoBase;
 	}
-
+	
 	public String getNome() {
 		return nome;
 	}
+
 
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -60,11 +67,11 @@ public class Automovel {
 		this.marca = marca;
 	}
 
-	public String getCor() {
+	public Cor getCor() {
 		return cor;
 	}
 
-	public void setCor(String cor) {
+	public void setCor(Cor cor) {
 		this.cor = cor;
 	}
 
@@ -115,10 +122,26 @@ public class Automovel {
 	public void setPrecoBase(double precoBase) {
 		this.precoBase = precoBase;
 	}
+	
+
+	// 
+
+	public boolean isPromocao() {
+		return promocao;
+	}
+
+	public void setPromocao(boolean promocao) {
+		this.promocao = promocao;
+	}
 
 	// função para calcular preco do carro
 	public double calculaPreco() {
 		double soma = precoBase;
+		double descontoPromocao = 0.10;
+		if (promocao) {
+			soma -= soma * descontoPromocao;
+		}
+		
 		if (vidroEletrico) {
 			soma += 1250.0;
 		}
@@ -131,18 +154,15 @@ public class Automovel {
 		if (direcaoEletrica) {
 			soma += 1250.0;
 		}
-		else {
-			soma = precoBase;
-		}
 		
 		switch (cor) {
-		case "branco":
+		case BRANCO:
 			return soma;
-		case "azul":
+		case AZUL:
 			return soma;
-		case "vermelho":
+		case VERMELHO:
 			return soma;
-		case "preto":
+		case PRETO:
 			return soma;
 		default:
 			return soma += 1000.0;
@@ -150,7 +170,7 @@ public class Automovel {
 		
 		
 	}
-	
+
 	@Override
 	public String toString() {
 		return marca
