@@ -261,3 +261,14 @@ variavel conta ---->  [titular] [numero] [saldo]
 * protected: o membro só pode ser acessado no mesmo pacote, bem como em subclasses de pacotes diferentes
 
 * public: o membro é acessado por todas as classes(ao menos que ele resida em modulo diferente que não exporte o pacote onde ele está)
+
+## Resumo sobre String:
+
+*  string não é um tipo de dado, ou um tipo primitivo, mas sim uma classe. E suas variáveis são, na verdade, objetos dessa classe. Os objetos desta classe são imutáveis, ou seja, uma vez instanciados não podemos mudar o que está guardado dentro do objeto String.
+
+* Objetos Strings podem ser instanciadas usando new construtor da classe, ou por meio de uma string literal. String literal é qualquer sequência de
+caracteres que estiver entre aspas (").
+
+```
+
+```
