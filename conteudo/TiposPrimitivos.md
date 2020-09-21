@@ -270,5 +270,51 @@ variavel conta ---->  [titular] [numero] [saldo]
 caracteres que estiver entre aspas (").
 
 ```
+String nome = new String("Wagner Lima");   // usando construtor da classe
+
+String nome1 = "Wagner Braga";            // usando string literal.
+```
+*  Possibilidades oferecidas pela classe String podemos destacar algumas como:
+
+* Tamanho da String; nome.length();  retorna 11
+
+* Converter para maiúsuculas ou minúsculas;  nome.toUpperCase();   /  nome.toLowerCase();
+
+* Fazer comparações que incluem verificações; nome.equals(nome1);
+
+* Extrair um caracter específico da string; nome.substring(1, 11); / recorta a primeira letra W deixando ate a posicao 11.
+
+* Achar um índice da string, inclusive recursivamente (de trás para frente); nome.indexOf("a"); retorna a posição do a=1 / nome.lastIndexOf("a"); retorna a posição a=10
+de traz para frente.
+
+* Substituir uma parte da string ou ela completamente; nome.replace("W", "V");  Vagner Lima. ou nome.replace("Wagner", "Marina"); Marina Lima
 
 ```
+package application;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		String nome = new String("Wagner Lima");
+		String nome1 = "Wagner Braga";
+		System.out.println(nome1);
+		
+		System.out.println(nome.length());
+		System.out.println(nome.toUpperCase());
+		System.out.println(nome.toLowerCase());
+		System.out.println(nome.equals(nome1));
+		System.out.println(nome.substring(1, nome.length()));
+		System.out.println(nome.indexOf("a"));
+		System.out.println(nome.lastIndexOf("a"));
+		System.out.println(nome.replace("W", "V"));
+		System.out.println(nome.replace("Wagner", "Marina"));
+
+	}
+
+}
+```
+### Concatenação
+
+* Concatenação nada mais é do que juntar strings numa só. Isto pode ser feito de duas formas: uma usando o método concat() da classe String ou usando o sinal
+de adição (+) como operador de concatenação. De uma forma mais simples, podemos usar o + para juntar várias strings ao mesmo tempo.
