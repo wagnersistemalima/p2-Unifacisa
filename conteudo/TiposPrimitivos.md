@@ -274,13 +274,15 @@ String nome = new String("Wagner Lima");   // usando construtor da classe
 
 String nome1 = "Wagner Braga";            // usando string literal.
 ```
+* Instanciar uma String sem a palavra reservada new, o Java tentará economizar memória, verificando se já existe um objeto com aquele mesmo conteúdo criado. Em caso positivo, ele reaproveita aquele objeto, atribuindo seu endereço de memória à variável. Por outro lado, sempre que uma String for criada usando explicitamente a palavra reservada new, então independente de já haver um objeto String com aquele conteúdo criado, a JVM criará um novo objeto.
+
 *  Possibilidades oferecidas pela classe String podemos destacar algumas como:
 
 * Tamanho da String; nome.length();  retorna 11
 
 * Converter para maiúsuculas ou minúsculas;  nome.toUpperCase();   /  nome.toLowerCase();
 
-* Fazer comparações que incluem verificações; nome.equals(nome1);
+* Fazer comparações que incluem verificações; nome.equals(nome1);   false
 
 * Extrair um caracter específico da string; nome.substring(1, 11); / recorta a primeira letra W deixando ate a posicao 11.
 
