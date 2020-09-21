@@ -321,7 +321,7 @@ public class Program {
 * Concatenação nada mais é do que juntar strings numa só. Isto pode ser feito de duas formas: uma usando o método concat() da classe String ou usando o sinal
 de adição (+) como operador de concatenação. De uma forma mais simples, podemos usar o + para juntar várias strings ao mesmo tempo.
 
-## StringBulder
+## StringBuilder
 
 * Se você precisar economizar espaço de memória, StringBuilder é a solução. Objetos de StringBuilder são mutáveis, e nesse caso, sempre que você alterar um StringBuilder, nenhum objeto adicional precisa ser criado.
 
