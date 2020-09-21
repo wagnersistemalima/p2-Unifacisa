@@ -316,6 +316,11 @@ public class Program {
 
 }
 ```
+
+## String pool
+
+*  A região de memória especial em que Strings são armazenadas pela JVM
+
 ### Concatenação
 
 * Concatenação nada mais é do que juntar strings numa só. Isto pode ser feito de duas formas: uma usando o método concat() da classe String ou usando o sinal
