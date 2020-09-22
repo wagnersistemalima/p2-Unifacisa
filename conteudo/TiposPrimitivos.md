@@ -351,3 +351,36 @@ public class Program {
 }
 
 ```
+## O que acontece toda vez que uma String é modificada?
+
+* Sempre que uma String precisa ser modificada é utilizado mais espaço em memória para que uma nova String seja criada contendo a nova versão dela.
+
+## Explique qual a diferença entre criar uma String das seguintes formas:
+
+* String nome = "Wagner";
+
+* String nome = new String("Wagner");
+
+* Quando criamos uma String por meio do operador new, o compilador Java cria um novo objeto e o armazena no espaço de heap reservado para a JVM. Cada String criada
+dessa maneira apontará para uma região de memória diferente com seu próprio endereço, já utilizando a String literal, o Java tentará economizar memória, verificando se já existe um objeto com aquele mesmo conteúdo criado. Em caso positivo, ele reaproveita aquele objeto, atribuindo seu endereço de memória à variável.
+
+## Como a classe StringBuilder pode ajudar a tornar este código mais eficiente?
+
+*  String nome = "Wagner";
+
+*   nome += " Lima";
+
+*   nome += " Braga";	
+  
+  ```
+	  	String nome = "Wagner";
+		StringBuilder sb = new StringBuilder();
+		sb.append(nome);
+		sb.append(" Lima Braga.");
+		System.out.println(sb);       //  Wagner de Lima braga
+  ```
+
+
+## Explique como funciona o String pool.
+
+* O Java utiliza um mecanismo chamado String interning, colocando as Strings num pool para tentar armazenar apenas uma cópia de cada sequência de caracteres em memória. Em tese, o programa usaria menos memória e seria mais eficiente em decorrência dessa otimização. Quando o Java encontra literais String no código, ele retorna sempre uma mesma instância de String, que aponta para uma entrada no pool interno da JVM. Sendo assim, é bem possível usar o operador == para comparar duas variáveis que recebem literais String, mas não podemos confiar no operador de comparação quando não sabemos como a String foi criada.
