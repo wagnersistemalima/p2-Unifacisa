@@ -291,6 +291,8 @@ de traz para frente.
 
 * Substituir uma parte da string ou ela completamente; nome.replace("W", "V");  Vagner Lima. ou nome.replace("Wagner", "Marina"); Marina Lima
 
+* Verifica se uma String está ou não vazia, que baseia-se se sua String possui tamanho = 0 //              nome.isEmpty()  retorna true ou false
+
 ```
 package application;
 
@@ -311,6 +313,7 @@ public class Program {
 		System.out.println(nome.lastIndexOf("a"));
 		System.out.println(nome.replace("W", "V"));
 		System.out.println(nome.replace("Wagner", "Marina"));
+		System.out.println(nome.isEmpty());
 
 	}
 
