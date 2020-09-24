@@ -28,3 +28,7 @@ Repositório com conteúdo abordado na disciplina de programação do curso de S
 [Resposta 3 Exercicio1Carros](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/exercicio1Carro/src/descricao.md)
 
 [Exercicio2ClassificadoImoveis](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicio2Imovel/src) :houses: :hotel:
+
+[ExercicioString](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicioStrings/src)
+
+[ExercicioSpotfy](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicioEncapsulamento1spotfy/src)
