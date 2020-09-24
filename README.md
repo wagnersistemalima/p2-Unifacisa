@@ -25,10 +25,10 @@ Repositório com conteúdo abordado na disciplina de programação do curso de S
 
 [Exercicio1Carros](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicio1Carro/src) :red_car: :blue_car:
 
-[Resposta 3 Exercicio1Carros](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/exercicio1Carro/src/descricao.md)
+[Resposta 3 Exercicio1Carros](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/exercicio1Carro/src/descricao.md) :student:
 
 [Exercicio2ClassificadoImoveis](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicio2Imovel/src) :houses: :hotel:
 
-[ExercicioString](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicioStrings/src)
+[ExercicioString](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicioStrings/src) :ticket:
 
-[ExercicioSpotfy](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicioEncapsulamento1spotfy/src)
+[ExercicioSpotfy](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicioEncapsulamento1spotfy/src) :saxophone: :guitar:
