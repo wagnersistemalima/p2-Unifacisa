@@ -2,7 +2,7 @@ package entities;
 
 import java.util.Arrays;
 
-public class Spotify extends Musica{
+public class Spotify{
 	
 	private Musica[] musicas;
 	private Integer quantidaDeMusicas;
