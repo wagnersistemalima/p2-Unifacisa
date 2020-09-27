@@ -1,8 +1,12 @@
 package entities;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
 
 public class Spotify{
+	
+	private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	
 	private Musica[] musicas;
 	private Integer quantidaDeMusicas;
@@ -83,6 +87,24 @@ public class Spotify{
 			return null;
 		}
 		
+	}
+	
+	// pesquisar musicas por ano lançamento
+	public Musica[] listarPorAnoLancamento(String diaMesAno) throws ParseException {
+		if (getQuantidaDeMusicas() > 0) {
+			Musica[] listarAno = new Musica[getQuantidaDeMusicas()];
+			int i=0;
+			for (Musica p: musicas) {
+				if (p != null && p.getAnoLancamento().equals(sdf.parseObject(diaMesAno))) {
+					listarAno[i] = p;
+					i++;
+				}
+			}
+			return listarAno;
+		}
+		else {
+			return null;
+		}
 	}
 
 	

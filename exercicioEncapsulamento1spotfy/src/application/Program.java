@@ -42,10 +42,17 @@ public class Program {
 		System.out.println("Quantidade de musicas na playList: " + playList.getQuantidaDeMusicas() + " musicas");
 		System.out.println("###############################################");
 		
-		
+		// listar musica por artista
 		Musica[] artista = playList.listarArtista("antonio cabeleira");
 		
 		for (Musica play: artista) {
+			System.out.println(play);
+		}
+		System.out.println("-----------------------------------------------");
+		// listar musica por diaMesAno
+		Musica[] diaMesAno = playList.listarPorAnoLancamento("02/02/2020");
+		
+		for (Musica play: diaMesAno) {
 			System.out.println(play);
 		}
 		
