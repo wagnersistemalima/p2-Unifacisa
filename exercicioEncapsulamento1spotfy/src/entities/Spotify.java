@@ -16,6 +16,7 @@ public class Spotify{
 		this.quantidaDeMusicas = 0;
 	}
 	
+	// contar a quantidade de musicas
 	public Integer getQuantidaDeMusicas() {
 		int contador = 0;
 		for (int i=0; i<this.quantidaDeMusicas; i++) {
@@ -61,6 +62,27 @@ public class Spotify{
 	@Override
 	public String toString() {
 		return "Spotify [musicas=" + Arrays.toString(musicas) + ", quantidaDeMusicas=" + quantidaDeMusicas + "]";
+	}
+	
+	
+	// pesquisar artistas
+	public Musica[] listarArtista(String artista) {
+		if (getQuantidaDeMusicas() > 0) {
+			// array auxiliar, para armezenar musicas por artista
+			Musica[] musicasDoArtista = new Musica[getQuantidaDeMusicas()];
+			int i=0;
+			for (Musica p: this.musicas) {
+				if (p != null && p.getArtista().equals(artista)) {
+					musicasDoArtista[i] = p;
+					i++;
+				}
+			}
+			return musicasDoArtista;
+		}
+		else {
+			return null;
+		}
+		
 	}
 
 	

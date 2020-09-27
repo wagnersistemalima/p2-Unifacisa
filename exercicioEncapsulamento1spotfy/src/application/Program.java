@@ -42,6 +42,13 @@ public class Program {
 		System.out.println("Quantidade de musicas na playList: " + playList.getQuantidaDeMusicas() + " musicas");
 		System.out.println("###############################################");
 		
+		
+		Musica[] artista = playList.listarArtista("antonio cabeleira");
+		
+		for (Musica play: artista) {
+			System.out.println(play);
+		}
+		
 	}
 
 
