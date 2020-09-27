@@ -55,10 +55,6 @@ public class Musica {
 		return anoLancamento;
 	}
 
-	public void setAnoLancamento(Date anoLancamento) {
-		this.anoLancamento = anoLancamento;
-	}
-
 	public Double getDuracao() {
 		return duracao;
 	}
@@ -93,8 +89,4 @@ public class Musica {
 			 
 	}
 	
-	
-	
-	
-
 }
