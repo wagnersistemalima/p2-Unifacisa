@@ -13,23 +13,34 @@ public class Program {
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		
-		Musica musica1 = new Musica("Levanta saia", "Antonio louro", "Vem dançar...",Genero.FORRO,sdf.parse("01/01/1970"), 3.0, 1);
-		Musica musica2 = new Musica("Cabrueira", "Zezinho da carne de charque", "To largado as traças", Genero.FORRO, 
-				sdf.parse("05/02/2020"), 4.0, 1);
-		Musica musica3 = new Musica("Truta imbativel", "Neguinho da quebrada", "Odio e ganancia", Genero.FUNK, 
-				sdf.parse("09/08/2019"), 2.0, 1);
+		Spotify playList = new Spotify(5);
+		// adicionar musicas
+		playList.addMusic(new Musica("sou cachorro", "antonio louro", "era voce", Genero.FORRO, sdf.parse("01/01/2020"), 3.0, 1));
+		playList.addMusic(new Musica("sou gato", "antonio moreno", "era eu", Genero.CLASSICO, sdf.parse("02/02/2020"), 3.0, 1));
+		playList.addMusic(new Musica("sou leao", "antonio cabeleira", "era tu", Genero.FORRO, sdf.parse("01/08/2004"), 4.0, 1));
 		
-		Spotify lista = new Spotify();
-		lista.addMusic(musica1);
-		lista.addMusic(musica2);
-		lista.addMusic(musica3);
+		// mostrar playList
+		for (Musica play: playList.getMusicas()) {
+			System.out.println(play);
+			System.out.println("---------------------------------------");
+		}
+		
+		// contar a quantidade de musica na playList
+		System.out.println("Quantidade de musicas na playList: " + playList.getQuantidaDeMusicas() + " musicas");
+		System.out.println("###############################################");
+		
+		// remover musica
+		playList.removeMusic("sou cachorro");
+		
+		// mostrar playList
+				for (Musica play: playList.getMusicas()) {
+					System.out.println(play);
+					System.out.println("---------------------------------------");
+				}
 		
 		
-		
-		
-		
-		
-		
+		System.out.println("Quantidade de musicas na playList: " + playList.getQuantidaDeMusicas() + " musicas");
+		System.out.println("###############################################");
 		
 	}
 

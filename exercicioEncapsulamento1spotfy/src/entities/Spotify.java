@@ -17,11 +17,18 @@ public class Spotify extends Musica{
 	}
 	
 	public Integer getQuantidaDeMusicas() {
-		return quantidaDeMusicas;
+		int contador = 0;
+		for (int i=0; i<this.quantidaDeMusicas; i++) {
+			if (musicas[i] != null) {
+				contador++;
+			}
+		}
+		return contador;
 	}
+	
 
-	public void setQuantidaDeMusicas(Integer quantidaDeMusicas) {
-		this.quantidaDeMusicas = quantidaDeMusicas;
+	public Musica[] getMusicas() {
+		return musicas;
 	}
 
 	public void addMusic(Musica musica) {
@@ -37,15 +44,25 @@ public class Spotify extends Musica{
 		// proxima musica a ser adcionada
 		quantidaDeMusicas++;
 	}
-
+	
+	// remover musicas
 	public void removeMusic(String nome) {
-		// 
+		boolean deslocarAEsquerda = false;
+		for (int i=0; i<this.quantidaDeMusicas; i++) {
+			if (musicas[i].getNome().equals(nome)) {
+				deslocarAEsquerda = true;
+			}
+			if (deslocarAEsquerda) {
+				this.musicas[i] = this.musicas[i+1];
+			}
+		}
 	}
 
 	@Override
 	public String toString() {
-		return "Spotify [playList=" + Arrays.toString(musicas) + "]";
+		return "Spotify [musicas=" + Arrays.toString(musicas) + ", quantidaDeMusicas=" + quantidaDeMusicas + "]";
 	}
+
 	
 	
 	
