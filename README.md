@@ -32,3 +32,5 @@ Repositório com conteúdo abordado na disciplina de programação do curso de S
 [ExercicioString](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicioStrings/src) :ticket:
 
 [ExercicioSpotify](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicioEncapsulamento1spotfy/src) :saxophone: :guitar:
+
+[ProvaPrimeiraUnidade](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/provaPrimeiraUnidade/src) :student:
