@@ -23,7 +23,7 @@ public class Spotify{
 	// contar a quantidade de musicas
 	public Integer getQuantidaDeMusicas() {
 		int contador = 0;
-		for (int i=0; i<this.quantidaDeMusicas; i++) {
+		for (int i=0; i<quantidaDeMusicas; i++) {
 			if (musicas[i] != null) {
 				contador++;
 			}
@@ -106,9 +106,5 @@ public class Spotify{
 			return null;
 		}
 	}
-
-	
-	
-	
 
 }

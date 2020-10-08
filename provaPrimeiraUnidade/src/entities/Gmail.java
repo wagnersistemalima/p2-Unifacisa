@@ -1,6 +1,7 @@
 package entities;
 
 import java.util.Arrays;
+import java.util.Date;
 
 public class Gmail {
 	
@@ -42,7 +43,10 @@ public class Gmail {
 		emails[quantidadeEmail] = email;
 		quantidadeEmail++;                                           // proximo email a ser adicionado
 	}
-	// 
+	// reuso
+	public void addEmail(String conteudo, String remetente, String destinatario, Date dataEnvio) {
+		addEmail(new Email(conteudo, remetente, destinatario, dataEnvio));
+	}
 	public boolean esthaLotado() {
 		if (getQuantidadeEmail() > 10) {
 			return true;
@@ -74,5 +78,6 @@ public class Gmail {
 	public String toString() {
 		return "Gmail [emails=" + Arrays.toString(emails) + ", quantidadeEmail=" + quantidadeEmail + "]";
 	}
+	
 	
 }

@@ -30,9 +30,5 @@ public class Data {
 	public short getHora() {
 		return hora;
 	}
-	
-	
-	
-	
 
 }

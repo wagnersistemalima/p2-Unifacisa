@@ -42,6 +42,9 @@ public class Email {
 		return quantidadeMaxEmails;
 	}
 
+	public static void setQuantidadeMaxEmails(int quantidadeMaxEmails) {
+		Email.quantidadeMaxEmails = quantidadeMaxEmails;
+	}
 
 	@Override
 	public String toString() {

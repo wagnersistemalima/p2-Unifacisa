@@ -17,6 +17,7 @@ public class Program {
 		Email email = new Email("Prova", "Maria", "Jose", sdf.parse("01/10/2020"));
 		Email email2 = new Email("Prova2", "Pedro", "Joao", sdf.parse("02/10/2020"));
 		Email email3 = new Email("Prova3", "Maria", "Pedro", sdf.parse("05/10/2020"));
+		gmail.addEmail("Prova4", "Paulo", "Ana", sdf.parse("01/05/2020"));
 		
 		
 		// adicionar email ou enviar email
