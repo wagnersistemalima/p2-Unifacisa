@@ -1,10 +1,10 @@
 # p2-Unifacisa
 Repositório com conteúdo abordado na disciplina de programação do curso de Sistemas de informação da Unifacisa
 
-## Java :coffee: RoadMap
+## Java :coffee: RoadMap :world_map: :mortar_board:
 
 
-[Tipos primitivos](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/conteudo/TiposPrimitivos.md) :world_map: :mortar_board:
+[1 - Tipos primitivos](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/conteudo/TiposPrimitivos.md) 
 
 [2 - Operadores](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/conteudo/operadores.md)
 
