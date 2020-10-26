@@ -4,7 +4,7 @@ Repositório com conteúdo abordado na disciplina de programação do curso de S
 ## Java :coffee: RoadMap
 
 
-[Conteudo](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/conteudo/TiposPrimitivos.md) :world_map: :mortar_board:
+[Tipos primitivos](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/conteudo/TiposPrimitivos.md) :world_map: :mortar_board:
 
 [2 - Operadores](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/conteudo/operadores.md)
 
