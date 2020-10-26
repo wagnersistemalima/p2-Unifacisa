@@ -43,17 +43,6 @@ class MainRefeicao{
 }
 ```
 
-No exemplo acima, instanciamos dois objetos: um almoço e um jantar.
-Cada objeto instanciado tem seu próprio espaço bem definido na memória RAM, e nele estão contidas as variáveis do objeto (ou da instância).
-Uma representação gráfica desses objetos na memória RAM poderia ser a seguinte:
-
-![alt text](imgs/variaveis-instancia.png)
-
-Note que cada objeto tem seus atributos com valores diferentes.
-Esses atributos são as variáveis de instância.
-Se nós mudarmos os valores dos atributos do objeto referenciado pela variável almoço, os valores dos atributos objeto referenciado pela variável jantar **não mudam**.
-Isto acontece pois essas variáveis são de instância e, portanto, pertencem ao objeto que foi criado.
-
 No exemplo a seguir, depois de criar os objetos, alguns valores de atributos do objeto refenciado pela variável almoço e o preço do objeto refenciado pela variável jantar são alterados.
 
 ```java
@@ -71,10 +60,6 @@ class MainRefeicao{
     }
 }
 ```
-
-Ilustramos essa mudança com a seguinte imagem:
-
-![alt text](imgs/variaveis-instancia-valores-alterados.png)
 
 Além das variáveis de instância também existem as **variáveis de classe (ou estáticas)**.
 Variáveis de classe não pertencem ao contexto do objeto.
@@ -128,9 +113,6 @@ Note que ambos os objetos terão um preço base de 10 reais.
 Embora a variável não esteja dentro da área de memória do objeto, os objetos conseguem enxergá-las e manipulá-las.
 Neste caso, o almoço custa 10+2 reais, e o jantar custa 10+0 reais.
 
-Segue ilustração:
-
-![alt text](imgs/variaveis-classe.png)
 
 É uma boa prática e extremamente recomendado que use o nome da classe para referenciar variáveis estáticas.
 Ex: "Refeicao.precoBase = 10;".
