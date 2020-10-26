@@ -18,6 +18,16 @@ Repositório com conteúdo abordado na disciplina de programação do curso de S
 
 [5.2 - Encapsulamento](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/conteudo/Encapsulamento.md)
 
+[5.3 - Strings](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/conteudo/Strings.md)
+
+[5.4 - Arrays](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/conteudo/Arrays.md)
+
+[5.5 - Listas](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/conteudo/Listas.md)
+
+[6 - Reuso](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/conteudo/Reuso.md)
+
+[7 - Polimorfismo](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/conteudo/Polimorfismo.md)
+
 [ExercicioAloMundo](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/aloMundo/src/application/Program.java) :telephone_receiver::earth_americas:
 
 [Exercicio1021Uri](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/exercicioUri1021/src/Main.java) :trophy:
