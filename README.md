@@ -64,4 +64,12 @@ Repositório com conteúdo abordado na disciplina de programação do curso de S
 
 [Exercicio 2 listas](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicio2Listas)
 
+[ListaArrayList](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/listaArrayLista)
+
+[ListaArrayListExercicioEmployee](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/listaArraylistaExercicioEmplooy)
+
 [ExercicioReusoComposicaoUber1](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicioReusoComposicaoUber)
+
+[ExercicioPolimorfismoZoologico](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicioPolimorfismoAnimal)
+
+[ExercicioPolimorfismoMortalKombate](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicioPolimorfismoMortalKombate)
