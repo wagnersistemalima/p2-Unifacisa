@@ -3,9 +3,10 @@ Repositório com conteúdo abordado na disciplina de programação do curso de S
 
 ## Java :coffee: RoadMap
 
-[Tipos primitivos]()
 
 [Conteudo](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/conteudo/TiposPrimitivos.md) :world_map: :mortar_board:
+
+[Operadores]()
 
 [ExercicioAloMundo](https://github.com/wagnersistemalima/p2-Unifacisa/blob/master/aloMundo/src/application/Program.java) :telephone_receiver::earth_americas:
 
