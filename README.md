@@ -73,3 +73,5 @@ Repositório com conteúdo abordado na disciplina de programação do curso de S
 [ExercicioPolimorfismoZoologico](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicioPolimorfismoAnimal)
 
 [ExercicioPolimorfismoMortalKombate](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicioPolimorfismoMortalKombate)
+
+[ExercicioClasseAbstrataUber](https://github.com/wagnersistemalima/p2-Unifacisa/tree/master/exercicioClasseAbstrataUber)
