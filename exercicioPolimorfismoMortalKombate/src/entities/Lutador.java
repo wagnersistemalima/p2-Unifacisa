@@ -1,5 +1,7 @@
 package entities;
 
+// super classe lutador
+
 public class Lutador {
 	
 	// atributos basicos
@@ -16,7 +18,7 @@ public class Lutador {
 	// construtor com argumentos
 
 	public Lutador(String nome) {
-		super();
+
 		this.nome = nome;
 		this.vida = 100;
 	}
@@ -41,33 +43,33 @@ public class Lutador {
 	
 	// metodo socar
 	
-	public void socar(Lutador lutador1) {
-		if (lutador1 != null) {
-			lutador1.vida -= 7;
+	public void socar(Lutador adversario) {
+		if (adversario != null) {
+			adversario.vida -= 7;
 		}
 	}
 	
 	// metodo chutar
 	
-	public void chutar(Lutador lutador1) {
-		if (lutador1 != null) {
-			lutador1.vida -= 5;
+	public void chutar(Lutador adversario) {
+		if (adversario != null) {
+			adversario.vida -= 5;
 		}
 	}
 	
 	// metodo atirar
 	
-	public void atirar(Lutador lutador1) {
-		if (lutador1 != null) {
-			lutador1.vida -= 10;
+	public void atirar(Lutador adversario) {
+		if (adversario != null) {
+			adversario.vida -= 10;
 		}
 	}
 	
 	// metodo lançar magia
 	
-	public void magia(Lutador lutador1) {
-		if (lutador1 != null) {
-			lutador1.vida -= 12;
+	public void magia(Lutador adversario) {
+		if (adversario != null) {
+			adversario.vida -= 12;
 		}
 	}
 
