@@ -30,6 +30,35 @@ public class Bebida implements Item{
 		return saborBebida;
 	}
 	
+	
+	// HashCode & equals
+	
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((saborBebida == null) ? 0 : saborBebida.hashCode());
+		result = prime * result + ((tamanho == null) ? 0 : tamanho.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Bebida other = (Bebida) obj;
+		if (saborBebida != other.saborBebida)
+			return false;
+		if (tamanho != other.tamanho)
+			return false;
+		return true;
+	}
+	
 	// metodos da assinatura do contrato
 	
 	// metodo para retornar o preço das bebidas

@@ -31,9 +31,36 @@ public class Refeicao implements Item{
 		return carboidrato;
 	}
 	
-	// metodos da assinatura do contrato
+	// HashCode & equals
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((carboidrato == null) ? 0 : carboidrato.hashCode());
+		result = prime * result + ((proteina == null) ? 0 : proteina.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Refeicao other = (Refeicao) obj;
+		if (carboidrato != other.carboidrato)
+			return false;
+		if (proteina != other.proteina)
+			return false;
+		return true;
+	}
 	
-	// metodo para retornar o preco da refeição
+	    // metodos da assinatura do contrato
+	
+		// metodo para retornar o preco da refeição
 
 	@Override
 	public double getPreco() {
