@@ -75,4 +75,11 @@ public class Bebida implements Item{
 		return saborBebida.name() + " " + tamanho.name();
 	}
 
+	@Override
+	public String toString() {
+		return getDescricao();
+	}
+	
+	
+
 }

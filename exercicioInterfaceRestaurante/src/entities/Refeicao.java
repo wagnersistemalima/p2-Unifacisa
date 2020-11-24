@@ -74,4 +74,11 @@ public class Refeicao implements Item{
 		return proteina.name() + " com " + carboidrato.name();
 	}
 
+	@Override
+	public String toString() {
+		return getDescricao();
+	}
+	
+	
+
 }

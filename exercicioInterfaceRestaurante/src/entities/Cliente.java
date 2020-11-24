@@ -10,6 +10,7 @@ public class Cliente {
 	// atributos basicos
 	
 	private int mesa;
+	private String nome;
 	
 	// associação 
 	
@@ -17,8 +18,9 @@ public class Cliente {
 	
 	// construtor
 
-	public Cliente(int mesa) {
+	public Cliente(int mesa, String nome) {
 		this.mesa = mesa;
+		this.nome = nome;
 		this.pedidos = new ArrayList<Item>();
 	}
 	
@@ -43,8 +45,8 @@ public class Cliente {
 	
 	// metodo remover um pedido
 	
-	public void removerPedido(Item item) {
-		this.pedidos.remove(item);
+	public boolean removerPedido(Item item) {
+		return this.pedidos.remove(item);
 	}
 	
 	// metodo para mostrar total da conta do pedido
@@ -56,5 +58,12 @@ public class Cliente {
 		}
 		return totalDaConta;
 	}
+
+	@Override
+	public String toString() {
+		return "Cliente [mesa=" + mesa + ", nome=" + nome + ", pedidos=" + pedidos + "]";
+	}
+	
+	
 
 }

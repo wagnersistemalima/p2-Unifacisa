@@ -3,6 +3,9 @@ package entities;
 import java.util.ArrayList;
 import java.util.List;
 
+import entities.sistemarestaurante.exception.ClienteInexistenteException;
+import entities.sistemarestaurante.exception.PagamentoInvalidoException;
+import entities.sistemarestaurante.exception.PedidoInexistenteException;
 import interfaces.Item;
 
 public class SistemaRestaurante {
@@ -24,41 +27,66 @@ public class SistemaRestaurante {
 	
 	// metodo para adicionar clientes
 	
-	public void adicionarCliente() {
-		Cliente cliente = new Cliente(mesa);
+	public void adicionarCliente(String nome) {
+		Cliente cliente = new Cliente(mesa, nome);
 		this.clientes.add(cliente);
 		mesa ++;
 	}
 	
-	// metodo para adicionar um pedido
+	// metodo para adicionar um pedido                        1º  lança uma exceção checada, ClienteInexistenteException
 	
-	public void adicionarPedido(int mesa, Item item) {
-		Cliente cliente = new Cliente(mesa);
+	public void adicionarPedido(int mesa, Item item) throws ClienteInexistenteException {
+		Cliente cliente = null;
+		try {
+		cliente = this.clientes.get(mesa);               // add um cliente a uma mesa inexistente
+		}
+		catch(IndexOutOfBoundsException e) {
+			throw new ClienteInexistenteException(mesa);             // exceção
+		}
 		cliente.adicionarPedido(item);
 	}
 	
-	// metodo para remover um pedido
+	// metodo para remover um pedido      2º lança duas exceçoes chegadas, ClienteInexistenteException, PedidoInexistenteException
 	
-	public void removerPedido(int mesa, Item item) {
-		Cliente cliente = new Cliente(mesa);
+	public void removerPedido(int mesa, Item item) throws ClienteInexistenteException, PedidoInexistenteException {
+		Cliente cliente = null;
+		try {
+		cliente = this.clientes.get(mesa);
+		}
+		catch(IndexOutOfBoundsException e) {
+			throw new ClienteInexistenteException(mesa);
+		}
+		if (!cliente.removerPedido(item)) {
+			throw new PedidoInexistenteException(cliente, item);
+		}
 		cliente.removerPedido(item);
 	}
 	
-	//metodo registrar pagamento cliente
+	//metodo registrar pagamento cliente                 3º lança uma exceção ClienteInexistenteException
 	
-	public double computarPagamentoCliente(int mesa) {
-		Cliente cliente = new Cliente(mesa);
+	public double computarPagamentoCliente(int mesa) throws ClienteInexistenteException {
+		Cliente cliente = null;
+		try {
+		cliente = this.clientes.get(mesa);
+		
+		}
+		catch (IndexOutOfBoundsException e) {
+			throw new ClienteInexistenteException(mesa);
+		}
 		return cliente.getConta();
 	}
 	
 	// metodo para receber pagamento cliente
 	
-	public void receberPagamentoCliente(int mesa, double pagamento) {
+	public void receberPagamentoCliente(int mesa, double pagamento) throws ClienteInexistenteException, PagamentoInvalidoException {
 		double valorDaConta = computarPagamentoCliente(mesa);
 		if (pagamento >= valorDaConta) {
 			this.clientes.remove(mesa);
 			mesa--;
 			ajustarMesa(mesa);
+		}
+		else {
+			throw new PagamentoInvalidoException(mesa, pagamento, valorDaConta);
 		}
 		
 	}
@@ -75,5 +103,7 @@ public class SistemaRestaurante {
 			mesa++;
 		}
 	}
+	
+	
 
 }
