@@ -18,7 +18,7 @@ public abstract class Corrida {
 	
 
 	public Corrida(double km, double precoBase, double precoKm) {
-		super();
+		
 		this.km = km;
 		this.precoBase = precoBase;
 		this.precoKm = precoKm;
